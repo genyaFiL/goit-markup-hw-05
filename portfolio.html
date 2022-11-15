@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WebStudio - Портфоліо</title>
+		<title>WebStudio - Ефективні рішення для вашого бізнесу</title>
+		<link rel="icon" type="image/png" sizes="48x31" href="/images/WS.png" />
 		<!-- Normalize -->
 		<link
 			rel="stylesheet"
@@ -30,22 +31,36 @@
 					<!-- prettier-ignore -->
 					<a href="/" class="logo" lang="en">Web<span class="logo-text1">Studio</span></a>
 					<ul class="site-nav list">
-						<li><a href="./index.html" class="link">Студія</a></li>
-						<li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-						<li><a href="" class="link">Контакти</a></li>
+						<li><a href="./index.html" class="site-nav-link link">Студія</a></li>
+						<li><a href="./portfolio.html" class="site-nav-link link current">Портфоліо</a></li>
+						<li><a href="" class="site-nav-link link">Контакти</a></li>
 					</ul>
 				</nav>
 				<ul class="header-list contacts list">
-					<li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+					<li>
+						<a href="mailto:info@devstudio.com" class="link">
+							<svg class="header-icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380961111111" class="link">
+							<svg class="header-icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
 				</ul>
 			</div>
 		</header>
 		<main class="portfolio">
 			<section class="section">
 				<div class="container">
-					<!-- <div class="filter container"> -->
 					<h1 class="visually-hidden">Портфоліо</h1>
+					<!-- filter -->
 					<ul class="filter portfolio-btn list">
 						<li><button type="button" class="btn-item current-btn">Усі</button></li>
 						<li><button type="button" class="btn-item">Веб-сайти</button></li>
@@ -53,13 +68,19 @@
 						<li><button type="button" class="btn-item">Дизайн</button></li>
 						<li><button type="button" class="btn-item">Маркетинг</button></li>
 					</ul>
-					<!-- </div> -->
-
-					<!-- <div class="project container"> -->
+					<!-- project -->
 					<ul class="project card-set list">
 						<li class="project-item card-set-item">
 							<a class="project-link" href="">
-								<img src="./images/techcrack.jpg" alt="Фотокартки" width="370" height="294" />
+								<div class="project-thumb">
+									<img src="./images/techcrack.jpg" alt="Фотокартки" width="370" height="294" />
+									<div class="overlay">
+										<p class="overlay-text">
+											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+											відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+										</p>
+									</div>
+								</div>
 								<div class="project-wrap">
 									<h2 class="portfolio-subtitle">Технокряк</h2>
 									<p class="portfolio-text">Веб-сайт</p>
@@ -227,5 +248,8 @@
 				</div>
 			</div>
 		</footer>
+
+
+
 	</body>
 </html>
