@@ -171,29 +171,19 @@ header {
 	position: relative;
 }
 
-.site-nav-link::after {
+.current::after {
 	content: "";
 	position: absolute;
 	left: 50%;
 	bottom: -0.6px;
 
-	transform: translateX(-50%) scaleX(0.3);
-
 	display: block;
 	width: 107%;
 	height: 4px;
-
 	border-radius: 2px;
 
 	background-color: var(--accent-text-color);
-	opacity: 0;
-	transition: transform var(--animation), opacity var(--animation);
-}
-
-.site-nav-link:hover::after,
-.site-nav-link:focus::after {
 	transform: translateX(-50%) scaleX(1);
-	opacity: 1;
 }
 
 /* ____________________Main____________________ */
